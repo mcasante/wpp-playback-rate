@@ -1,0 +1,15 @@
+{
+  "name": "WhatsApp Playback Rate",
+  "description": "Control the playback speed of WhatsApp Audios",
+  "version": "0.1",
+  "minimum_chrome_version": "16.0.884",
+  "host_permissions": ["https://web.whatsapp.com/"],
+  "content_scripts": [
+    {
+      "matches": ["https://web.whatsapp.com/"],
+      "css": ["style.css"],
+      "js": ["script.js"]
+    }
+  ],
+  "manifest_version": 23
+}
